@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			ML App
+		</div>
+		<h2>Un Wanted Mail Detector</h2>
+		
+	</div>
+	</header>
+	<p style="color:blue;font-size:20;text-align: left;"><b>Results for Comment</b></p>
+	<div class="results">
+
+
+		
+	{% if prediction == 1%}
+	<h2 style="color:red;">Non Abusive</h2>
+	{% elif prediction == 0%}
+	<h2 style="color:blue;">Abusive(unwanted Mail)</h2>
+	{% endif %}
+
+	</div>
+
+</body>
+</html>
